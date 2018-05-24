@@ -1,0 +1,40 @@
+git config --global user.email "1056266154@qq.com"
+git config --global user.name "yinbo"
+
+git init 在本地创建仓库
+
+git clone https://github.com/crawler-plus/crawler-plus.git
+
+git status 查看状态
+git add a.php 放在暂存区
+git commit -m '' 放到仓库
+git add . 把所有的文件放在暂存区
+.gitignore 文件是忽略添加在暂存区的文件
+
+git rm a.txt 版本库和本地都没有了
+git rm --cached readme.txt 版本库没有了，本地有
+git mv c.php houdunren.php 改名
+git log -p 查看文件内容
+git commit --amend 修改提交日志
+git checkout -- a.php 把文件恢复到初始
+git branch 查看分支
+git branch ask 创建分支
+git checkout ask 切换到ask分支
+git checkout -b bbs 指先创建bbs分支，再切换到bbs分支
+在master分支上 git merge ask 表示将ask分支merge到master分支上
+git branch -d ask 删除ask分支
+git branch --merged 查看已经合并的分支
+git branch --no-merged 查看还没有合并的分支
+git branch -D test 强行删除分支
+git stash 暂存
+git stash list 查看暂存文件
+git stash apply 恢复暂存区
+git stash drop stash:stash@{0} 删除暂存区
+子分支中 git rebase master 然后在主分支中git merge就会整洁的提交记录了
+git remote add origin ...... 本地跟远程进行关联
+git remove -v 查看远程库
+git push -u origin master 推送到远程服务器的master分支
+git pull origin ask:ask 意思是把远程的ask分支检出到本地的ask分支
+git checkout ask 切换到ask分支
+git push 推送到远程
+git push origin --delete ask 删除远程分支ask
